@@ -2,6 +2,7 @@ package com.zipcodewilmington.danny_do_better_exercises;
 
 /**
  * Created by dan on 6/14/17.
+ * Completed lab on 10/29/21 12:03 AM. haven't slept in days
  */
 public class MathUtilities {
 
