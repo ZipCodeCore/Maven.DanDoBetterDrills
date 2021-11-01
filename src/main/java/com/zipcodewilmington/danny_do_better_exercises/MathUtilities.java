@@ -210,7 +210,7 @@ public class MathUtilities {
      * @return product of `multiplicand` by `multiplier`
      */
     public Byte multiply(byte multiplicand, byte multiplier) {
-        return null;
+        return (byte)(multiplicand * multiplier);
     }
 
     /**
@@ -219,7 +219,7 @@ public class MathUtilities {
      * @return product of `multiplicand` by `multiplier`
      */
     public Float multiply(float multiplicand, float multiplier) {
-        return null;
+        return (float)(multiplicand * multiplier);
     }
 
     /**
@@ -228,6 +228,6 @@ public class MathUtilities {
      * @return product of `multiplicand` by `multiplier`
      */
     public Double multiply(double multiplicand, double multiplier) {
-        return null;
+        return (double)(multiplicand * multiplier);
     }
 }
