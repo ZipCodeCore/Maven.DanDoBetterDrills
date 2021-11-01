@@ -11,7 +11,8 @@ public class MathUtilities {
      * @return sum of `baseValue` and `difference`
      */
     public Integer add(int baseValue, int difference) {
-        return null;
+
+        return baseValue + difference;
     }
 
     /**
@@ -20,7 +21,7 @@ public class MathUtilities {
      * @return sum of `baseValue` and `difference`
      */
     public Long add(long baseValue, long difference) {
-        return null;
+        return baseValue + difference;
     }
 
     /**
@@ -28,8 +29,12 @@ public class MathUtilities {
      * @param difference value to add to starting value
      * @return sum of `baseValue` and `difference`
      */
-    public Short add(short baseValue, short difference) {
-        return null;
+    public int add(short baseValue, short difference) {
+
+        int i = baseValue;
+        int j = difference;
+        return i + j;
+
     }
 
     /**
@@ -37,8 +42,17 @@ public class MathUtilities {
      * @param difference value to add to starting value
      * @return sum of `baseValue` and `difference`
      */
-    public Byte add(byte baseValue, byte difference) {
-        return null;
+    public int add(byte baseValue, byte difference) {
+        Byte a = new Byte(baseValue);
+        Byte b = new Byte(difference);
+        int a2 = a.intValue();
+        int b2 = b.intValue();
+
+//        double i = baseValue;
+//        double j = difference;
+        return a2 + b2;
+
+
     }
 
     /**
@@ -47,7 +61,9 @@ public class MathUtilities {
      * @return sum of `baseValue` and `difference`
      */
     public Float add(float baseValue, float difference) {
-        return null;
+        Float a = baseValue;
+        Float b = difference;
+        return a + b;
     }
 
     /**
@@ -116,7 +132,7 @@ public class MathUtilities {
 
     /**
      * @param dividend value to be divided
-     * @param divisor value to divide by
+     * @param divisor  value to divide by
      * @return division of `dividend` by `divisor
      */
     public Integer divide(int dividend, int divisor) {
@@ -125,7 +141,7 @@ public class MathUtilities {
 
     /**
      * @param dividend value to be divided
-     * @param divisor value to divide by
+     * @param divisor  value to divide by
      * @return division of `dividend` by `divisor
      */
     public Long divide(long dividend, long divisor) {
@@ -134,7 +150,7 @@ public class MathUtilities {
 
     /**
      * @param dividend value to be divided
-     * @param divisor value to divide by
+     * @param divisor  value to divide by
      * @return division of `dividend` by `divisor
      */
     public Short divide(short dividend, short divisor) {
@@ -143,7 +159,7 @@ public class MathUtilities {
 
     /**
      * @param dividend value to be divided
-     * @param divisor value to divide by
+     * @param divisor  value to divide by
      * @return division of `dividend` by `divisor
      */
     public Byte divide(byte dividend, byte divisor) {
@@ -152,7 +168,7 @@ public class MathUtilities {
 
     /**
      * @param dividend value to be divided
-     * @param divisor value to divide by
+     * @param divisor  value to divide by
      * @return division of `dividend` by `divisor
      */
     public Float divide(float dividend, float divisor) {
@@ -161,7 +177,7 @@ public class MathUtilities {
 
     /**
      * @param dividend value to be divided
-     * @param divisor value to divide by
+     * @param divisor  value to divide by
      * @return division of `dividend` by `divisor
      */
     public Double divide(double dividend, double divisor) {
@@ -171,7 +187,7 @@ public class MathUtilities {
 
     /**
      * @param multiplicand value to be multiplied
-     * @param multiplier value to multiply by
+     * @param multiplier   value to multiply by
      * @return product of `multiplicand` by `multiplier`
      */
     public Integer multiply(int multiplicand, int multiplier) {
@@ -180,7 +196,7 @@ public class MathUtilities {
 
     /**
      * @param multiplicand value to be multiplied
-     * @param multiplier value to multiply by
+     * @param multiplier   value to multiply by
      * @return product of `multiplicand` by `multiplier`
      */
     public Long multiply(long multiplicand, long multiplier) {
@@ -189,15 +205,16 @@ public class MathUtilities {
 
     /**
      * @param multiplicand value to be multiplied
-     * @param multiplier value to multiply by
+     * @param multiplier   value to multiply by
      * @return product of `multiplicand` by `multiplier`
      */
     public Short multiply(short multiplicand, short multiplier) {
         return null;
     }
+
     /**
      * @param multiplicand value to be multiplied
-     * @param multiplier value to multiply by
+     * @param multiplier   value to multiply by
      * @return product of `multiplicand` by `multiplier`
      */
     public Byte multiply(byte multiplicand, byte multiplier) {
@@ -206,7 +223,7 @@ public class MathUtilities {
 
     /**
      * @param multiplicand value to be multiplied
-     * @param multiplier value to multiply by
+     * @param multiplier   value to multiply by
      * @return product of `multiplicand` by `multiplier`
      */
     public Float multiply(float multiplicand, float multiplier) {
@@ -215,7 +232,7 @@ public class MathUtilities {
 
     /**
      * @param multiplicand value to be multiplied
-     * @param multiplier value to multiply by
+     * @param multiplier   value to multiply by
      * @return product of `multiplicand` by `multiplier`
      */
     public Double multiply(double multiplicand, double multiplier) {
