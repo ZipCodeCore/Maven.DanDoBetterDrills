@@ -18,7 +18,7 @@ public class StringUtilities {
      * @return the concatenation of two strings, `firstSegment`, and `secondSegment`
      */
     public static String concatenation(String firstSegment, String secondSegment){
-        return firstSegment + secondSegment;
+        return firstSegment.concat(secondSegment);
     }
 
     /**
@@ -27,7 +27,8 @@ public class StringUtilities {
      * @return the concatenation of an integer, `firstSegment`, and a String, `secondSegment`
      */
     public static String concatenation(int firstSegment, String secondSegment){
-        return null;
+
+        return firstSegment + secondSegment;
     }
 
     /**
@@ -53,7 +54,8 @@ public class StringUtilities {
      * @return the equivalence of two strings, `inputValue` and `comparableValue`
      */
     public static Boolean compareTwoStrings(String inputValue, String comparableValue){
-        return null;
+            if (inputValue.equals(comparableValue))
+                return true;
     }
 
     /**
@@ -61,7 +63,9 @@ public class StringUtilities {
      * @return the middle character of `inputValue`
      */
     public static Character getMiddleCharacter(String inputValue){
-        return null;
+        int length = inputValue.length();
+        int middle = length / 2;
+        return inputValue.substring(middle); // not sure from here
     }
 
     /**
