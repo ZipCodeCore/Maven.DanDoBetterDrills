@@ -63,9 +63,9 @@ public class StringUtilities {
      */
     public static Boolean compareTwoStrings(String inputValue, String comparableValue){
         //comparing two inputs to see if they are equivelent
-        //using Boolean (true/false) to compare if they are
+        //using Boolean (true/false) to compare if they are the same
 
-        return Equals(inputValue,comparableValue);
+        return inputValue.equals(comparableValue);
     }
 
     /**
@@ -81,6 +81,7 @@ public class StringUtilities {
      * @return the first sequence of characters
      */
     public static String getFirstWord(String spaceDelimitedString){
+
         return null;
     }
 
