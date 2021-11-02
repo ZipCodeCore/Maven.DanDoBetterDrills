@@ -85,10 +85,15 @@ public class StringUtilities {
      * @return the first sequence of characters
      */
     public static String getFirstWord(String spaceDelimitedString){
-        Scanner scanWords = new Scanner(spaceDelimitedString);
-        ArrayList<String> words = new ArrayList<String>();
 
-        return words[0];
+        String[] str = spaceDelimitedString.split(" ");
+        String firstWord = str[0];
+        return firstWord;
+
+
+
+//        return null;
+//        return words[0];
 
 //        while (scanWords.hasNext()) {
 //            words.add(scanWords.next());
@@ -100,7 +105,9 @@ public class StringUtilities {
      * @return the second word of a string delimited by spaces.
      */
     public static String getSecondWord(String spaceDelimitedString){
-        return null;
+        String[] str = spaceDelimitedString.split(" ");
+        String secondWord = str[1];
+        return secondWord;
     }
 
     /**
@@ -108,6 +115,7 @@ public class StringUtilities {
      * @return an identical string with characters in reverse order.
      */
     public static String reverse(String stringToReverse){
-        return null;
+        String newString = new StringBuffer(stringToReverse).reverse().toString();
+        return newString; 
     }
 }

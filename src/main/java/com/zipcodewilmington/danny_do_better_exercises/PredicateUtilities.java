@@ -14,7 +14,7 @@ public class PredicateUtilities {
         if (x > y) {
             return true;
         }
-        return null;
+        return false;
     }
 
     /**
