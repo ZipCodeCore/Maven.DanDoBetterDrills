@@ -1,5 +1,8 @@
 package com.zipcodewilmington.danny_do_better_exercises;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /**
  * Created by dan on 6/14/17.
  */
@@ -36,7 +39,9 @@ public class StringUtilities {
      * @return the first 3 characters of `input`
      */
     public static String getPrefix(String input){
-         return input.substring(0, 2);
+
+
+        return input.substring(0, 3);
     }
 
     /**
@@ -44,7 +49,8 @@ public class StringUtilities {
      * @return the last 3 characters of `input`
      */
     public static String getSuffix(String input){
-        return input.substring(input.length() - 2, input.length());
+        int inputLength = input.length();
+        return input.substring(inputLength - 3, inputLength);
 
     }
 
@@ -53,19 +59,25 @@ public class StringUtilities {
      * @param comparableValue the value to be compared against
      * @return the equivalence of two strings, `inputValue` and `comparableValue`
      */
-    public static Boolean compareTwoStrings(String inputValue, String comparableValue){
-            if (inputValue.equals(comparableValue))
-                return true;
+    public static Boolean compareTwoStrings(String inputValue, String comparableValue) {
+        if (inputValue.equals(comparableValue)) {
+            return true;
+        } return false;
     }
+
 
     /**
      * @param inputValue the value input from user
      * @return the middle character of `inputValue`
      */
     public static Character getMiddleCharacter(String inputValue){
-        int length = inputValue.length();
-        int middle = length / 2;
-        return inputValue.substring(middle); // not sure from here
+//        int length = inputValue.length();
+//        int middle = length / 2;
+//        if (middle.length % 2 != 0) {
+//        char middleChar = length.length((1/2) -1);
+//        return middleChar;
+
+        return null;
     }
 
     /**
@@ -73,7 +85,14 @@ public class StringUtilities {
      * @return the first sequence of characters
      */
     public static String getFirstWord(String spaceDelimitedString){
-        return null;
+        Scanner scanWords = new Scanner(spaceDelimitedString);
+        ArrayList<String> words = new ArrayList<String>();
+
+        return words[0];
+
+//        while (scanWords.hasNext()) {
+//            words.add(scanWords.next());
+//        } return words
     }
 
     /**
