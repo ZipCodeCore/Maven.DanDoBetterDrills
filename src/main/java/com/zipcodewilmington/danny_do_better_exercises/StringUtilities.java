@@ -8,7 +8,9 @@ public class StringUtilities {
      * @return `Hello World` as a string
      */
     public static String getHelloWorld() {
-        return null;
+       String helloWorld = "Hello World";
+
+        return helloWorld;
     }
 
     /**
@@ -17,7 +19,8 @@ public class StringUtilities {
      * @return the concatenation of two strings, `firstSegment`, and `secondSegment`
      */
     public static String concatenation(String firstSegment, String secondSegment){
-        return null;
+
+        return (firstSegment + secondSegment);
     }
 
     /**
@@ -26,7 +29,11 @@ public class StringUtilities {
      * @return the concatenation of an integer, `firstSegment`, and a String, `secondSegment`
      */
     public static String concatenation(int firstSegment, String secondSegment){
-        return null;
+        //you're combining an int w/ a string = however you'll be returning a string because the method is calling for a string return.
+        //Therefore you have to convert an int into a string. In order to combine them together.
+        String stringFirstSegment = Integer.toString(firstSegment); //converting an int into a string - Integer.toString (static method) <- class method, used directy on the class Math.pow(); System.out.println().
+
+        return concatenation (stringFirstSegment,secondSegment);
     }
 
     /**
@@ -34,7 +41,10 @@ public class StringUtilities {
      * @return the first 3 characters of `input`
      */
     public static String getPrefix(String input){
-        return null;
+        //get the first 3 letters of the String input; input = inp;
+        //
+
+        return (input.substring(0,3));
     }
 
     /**
@@ -42,7 +52,8 @@ public class StringUtilities {
      * @return the last 3 characters of `input`
      */
     public static String getSuffix(String input){
-        return null;
+
+        return input.substring(2,5);
     }
 
     /**
@@ -51,7 +62,10 @@ public class StringUtilities {
      * @return the equivalence of two strings, `inputValue` and `comparableValue`
      */
     public static Boolean compareTwoStrings(String inputValue, String comparableValue){
-        return null;
+        //comparing two inputs to see if they are equivelent
+        //using Boolean (true/false) to compare if they are
+
+        return Equals(inputValue,comparableValue);
     }
 
     /**
