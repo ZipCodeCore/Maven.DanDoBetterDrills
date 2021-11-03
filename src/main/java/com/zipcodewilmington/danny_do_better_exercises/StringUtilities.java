@@ -73,8 +73,16 @@ public class StringUtilities {
      * @return the middle character of `inputValue`
      */
     public static Character getMiddleCharacter(String inputValue){
+        //first convert the string into an int
+        //take the new string = integer, and divide it by two
 
-        return null;
+        int getMiddleCharacter = inputValue.length();
+        //convert the string inputValue into an integer; rename main method with new method String
+        int middleChar = (getMiddleCharacter/2)-1;
+        //giving (type) int a (variable)middleChar = (variable)getMiddleCharacter divided by 2 (dividing the total letters by 2; minus 1 because the total string was even.
+        char c = inputValue.charAt(middleChar);
+        //char c = method to extract the middle char = inputValue (original).charAt(method)(new variable middleChar);
+        return c;
     }
 
     /**
@@ -82,6 +90,9 @@ public class StringUtilities {
      * @return the first sequence of characters
      */
     public static String getFirstWord(String spaceDelimitedString){
+        //first convert the string into an int
+        //take the new string = integer, and divide it by two
+
 
         return null;
     }
@@ -91,7 +102,7 @@ public class StringUtilities {
      * @return the second word of a string delimited by spaces.
      */
     public static String getSecondWord(String spaceDelimitedString){
-        return ;
+        return null;
     }
 
     /**
