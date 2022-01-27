@@ -1,4 +1,4 @@
-# Java Fundamentals
+# Dan Do Better
 
 ### **Objective:**
 * To complete the method stubs in each of the provided classes
