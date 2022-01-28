@@ -20,6 +20,7 @@ public class MathUtilities {
      * @param difference value to add to starting value
      * @return sum of `baseValue` and `difference`
      */
+    
     public Long add(long baseValue, long difference) {
         return baseValue + difference;
     }
@@ -29,6 +30,7 @@ public class MathUtilities {
      * @param difference value to add to starting value
      * @return sum of `baseValue` and `difference`
      */
+    
     public Short add(short baseValue, short difference) {
         return (short) (baseValue + difference);
     }
