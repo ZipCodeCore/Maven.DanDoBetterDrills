@@ -5,6 +5,9 @@
 	* `MathUtilities`
 	* `PredicateUtilities`
 	* `StringUtilities`
+* After getting EACH method working, do a commit, with a message describing which method is now working.
+* Once you have all methods working, make a final commit, with a message of "finished".
+
 
 ### **Purpose:**
 * To establish familiarity with
@@ -33,6 +36,7 @@
     * There are comments above each method stub to describe the expected behavior.
 4. Upon completion, open and run the `TestSuite` class to ensure that all tests have 100% success.
     * `TestSuite` is located in `src.test.java.com.zipcodewilmington.danny_do_better_exercises`
+    * How do you run these tests? *Ask around!*
 
 ## Predicate Utilities
 * A _predicate_ is a clause which states something about a subject. (_e.g., **is assigning**_ in _"Leon **is assigning** homework"_)
