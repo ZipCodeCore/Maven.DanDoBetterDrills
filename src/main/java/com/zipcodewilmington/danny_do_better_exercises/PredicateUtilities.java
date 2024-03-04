@@ -1,7 +1,7 @@
 package com.zipcodewilmington.danny_do_better_exercises;
 
 /**
- * Created by dan on 6/14/17.
+ * Modified by kristofer 3/4/2024.
  */
 public class PredicateUtilities {
     /**
